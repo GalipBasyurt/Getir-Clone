@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@layer base {
+    html, body {
+        font-family: 'Open Sans', sans-serif;
+        @apply antialiased bg-gray-50;
+    }
+}
+
+.flags-select{
+    @apply !pb-0
+}
+
+.flags-select button{
+    @apply h-14 border-2 border-gray-200 hover:border-primary-brand-color transition-colors bg-white
+}
+
+.flags-select button > span span:nth-child(2){
+    @apply text-sm pl-2 
+}
+
+.ReactCollapse--collapse{
+    @apply transition-all
+}
+
+.collapse-btn{
+    @apply border-none
+}
